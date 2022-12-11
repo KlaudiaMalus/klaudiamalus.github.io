@@ -1,4 +1,12 @@
-<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>Kropka - Переклади</title><link rel=stylesheet href=/style.css type=text/css media=all><link rel=icon type=image/svg href=/img/icon.svg></head><body><div class=bar><nav class=menu><a class=menu-item href=/ua/><img class=icon src=/img/icon.svg>Контакти</span>
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>Kropka - Переклади</title><link rel=stylesheet href=/style.css type=text/css media=all><link rel=icon type=image/svg href=/img/icon.svg><link rel=stylesheet type=text/css href=/photoswipe/photoswipe.css><script type=module>
+  import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.min.js';
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#pictures',
+    children: 'a',
+    pswpModule: () => import('/photoswipe/photoswipe.esm.min.js')
+  });
+  lightbox.init();
+</script></head><body><div class=bar><nav class=menu><a class=menu-item href=/ua/><img class=icon src=/img/icon.svg>Контакти</span>
 <a class=menu-item href=/ua/about>Про себе</span>
 <a class=menu-item href=/ua/classes>Курси</span>
 <a class="menu-item current" href=/ua/translations>Переклади</span></nav><nav class=lang><a class=lang-item href=https://kropkaszkola.pl/by/translations/>BY</a>

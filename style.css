@@ -37,6 +37,19 @@ a {
   margin-right: 10px;
 }
 
+#pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.picture {
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #555;
+}
+
 .logo {
   font-size: 20px;
   color: #d9614f;
@@ -124,5 +137,14 @@ hr {
 @media all and (max-width: 720px) {
   .bar {
     flex-direction: column-reverse;
+  }
+
+  #pictures {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .picture {
+    margin: 10px;
   }
 }

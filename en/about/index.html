@@ -1,11 +1,19 @@
-<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>Kropka - About</title><link rel=stylesheet href=/style.css type=text/css media=all><link rel=icon type=image/svg href=/img/icon.svg></head><body><div class=bar><nav class=menu><a class=menu-item href=/en/><img class=icon src=/img/icon.svg>Contacts</span>
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>Kropka - About</title><link rel=stylesheet href=/style.css type=text/css media=all><link rel=icon type=image/svg href=/img/icon.svg><link rel=stylesheet type=text/css href=/photoswipe/photoswipe.css><script type=module>
+  import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.min.js';
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#pictures',
+    children: 'a',
+    pswpModule: () => import('/photoswipe/photoswipe.esm.min.js')
+  });
+  lightbox.init();
+</script></head><body><div class=bar><nav class=menu><a class=menu-item href=/en/><img class=icon src=/img/icon.svg>Contacts</span>
 <a class="menu-item current" href=/en/about>About</span>
 <a class=menu-item href=/en/classes>Classes</span>
 <a class=menu-item href=/en/translations>Translations</span></nav><nav class=lang><a class=lang-item href=https://kropkaszkola.pl/by/about/>BY</a>
 <a class="lang-item current" href=https://kropkaszkola.pl/en/about/>EN</a>
 <a class=lang-item href=https://kropkaszkola.pl/about/>PL</a>
 <a class=lang-item href=https://kropkaszkola.pl/ru/about/>RU</a>
-<a class=lang-item href=https://kropkaszkola.pl/ua/about/>UA</a></nav></div><hr><main><article><h1 id=about-myself>About Myself</h1><p>My name is Claudia Malus. I am Polish. I was born and raised in
+<a class=lang-item href=https://kropkaszkola.pl/ua/about/>UA</a></nav></div><hr><main><article><span class=text><h1 id=about-myself>About Myself</h1><p>My name is Claudia Malus. I am Polish. I was born and raised in
 Zaglembe-Dobrowski in the Silesian Voivodeship, but after passing exams in high
 school, I moved to Krakow. I changed my place of residence several times,
 living, in particular, in Russia, the Netherlands, Scotland. I live and work
@@ -29,4 +37,6 @@ been working in the examination committee for passing the state exam for a
 certificate of knowledge of the Polish language since November 2021. Since 2022
 I have been teaching Polish and Russian at public and private univeristies,
 among them Wroclaw University of Technology and Polish-Japanese Academy of
-Information Technology.</p></article></main></body></html>
+Information Technology.</p></span><div class=pswp-gallery id=pictures><a href=/en/about/1.jpg data-pswp-width=817 data-pswp-height=1146 target=_blank><img class=picture src=/en/about/1_hu4a9a55f3b245dc9b64c54ce1248a7cf4_606624_300x0_resize_q75_box.jpg></a>
+<a href=/en/about/2.jpg data-pswp-width=600 data-pswp-height=900 target=_blank><img class=picture src=/en/about/2_huba38e4c9eea29bcf3e57ed49cb713b44_218738_300x0_resize_q75_box.jpg></a>
+<a href=/en/about/3.jpg data-pswp-width=808 data-pswp-height=1028 target=_blank><img class=picture src=/en/about/3_hubfec1dbca5dd15bc3b052f7db3353a0e_184656_300x0_resize_q75_box.jpg></a></div></div></article></main></body></html>

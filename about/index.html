@@ -1,11 +1,19 @@
-<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>Kropka - O mnie</title><link rel=stylesheet href=/style.css type=text/css media=all><link rel=icon type=image/svg href=/img/icon.svg></head><body><div class=bar><nav class=menu><a class=menu-item href=/><img class=icon src=/img/icon.svg>Kontakt</span>
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>Kropka - O mnie</title><link rel=stylesheet href=/style.css type=text/css media=all><link rel=icon type=image/svg href=/img/icon.svg><link rel=stylesheet type=text/css href=/photoswipe/photoswipe.css><script type=module>
+  import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.min.js';
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#pictures',
+    children: 'a',
+    pswpModule: () => import('/photoswipe/photoswipe.esm.min.js')
+  });
+  lightbox.init();
+</script></head><body><div class=bar><nav class=menu><a class=menu-item href=/><img class=icon src=/img/icon.svg>Kontakt</span>
 <a class="menu-item current" href=/about>O mnie</span>
 <a class=menu-item href=/classes>Kursy</span>
 <a class=menu-item href=/translations>Tłumaczenia</span></nav><nav class=lang><a class=lang-item href=https://kropkaszkola.pl/by/about/>BY</a>
 <a class=lang-item href=https://kropkaszkola.pl/en/about/>EN</a>
 <a class="lang-item current" href=https://kropkaszkola.pl/about/>PL</a>
 <a class=lang-item href=https://kropkaszkola.pl/ru/about/>RU</a>
-<a class=lang-item href=https://kropkaszkola.pl/ua/about/>UA</a></nav></div><hr><main><article><h1 id=o-mnie>O mnie</h1><p>Nazywam się Klaudia Malus, z pochodzenia jestem Polką. Urodziłam się i
+<a class=lang-item href=https://kropkaszkola.pl/ua/about/>UA</a></nav></div><hr><main><article><span class=text><h1 id=o-mnie>O mnie</h1><p>Nazywam się Klaudia Malus, z pochodzenia jestem Polką. Urodziłam się i
 wychowałam w Zagłębiu Dąbrowskim w województwie śląskim, jednak po zdaniu
 matury przeprowadziłam się do Krakowa, a następnie kilkukrotnie zmieniałam
 miejsce zamieszkania, przebywając m.in. w Rosji, Holandii oraz Szkocji. Obecnie
@@ -30,4 +38,6 @@ uchodźców, organizowane przez warszawski Urząd ds. Cudzoziemców. Od listopad
 2021 roku pracuję również jako egzaminator państwowego egzaminu certyfikatowego
 z języka polskiego. Od 2022 roku wykładam języki obce w polskich prywatnych i
 państwowych szkołach wyższych i uczelniach, min. w: Politechnice Wrocławskiej
-oraz w Polsko-Japońskiej Akademii Technik Komputerowych.</p></article></main></body></html>
+oraz w Polsko-Japońskiej Akademii Technik Komputerowych.</p></span><div class=pswp-gallery id=pictures><a href=/about/1.jpg data-pswp-width=817 data-pswp-height=1146 target=_blank><img class=picture src=/about/1_hu4a9a55f3b245dc9b64c54ce1248a7cf4_606624_300x0_resize_q75_box.jpg></a>
+<a href=/about/2.jpg data-pswp-width=600 data-pswp-height=900 target=_blank><img class=picture src=/about/2_huba38e4c9eea29bcf3e57ed49cb713b44_218738_300x0_resize_q75_box.jpg></a>
+<a href=/about/3.jpg data-pswp-width=808 data-pswp-height=1028 target=_blank><img class=picture src=/about/3_hubfec1dbca5dd15bc3b052f7db3353a0e_184656_300x0_resize_q75_box.jpg></a></div></div></article></main></body></html>
