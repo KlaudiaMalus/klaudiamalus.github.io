@@ -103,13 +103,17 @@ main {
 table {
   width: 100%;
   border-collapse: collapse;
-  text-align: left;
+  text-align: center;
 }
 
 table, th, td {
   padding: 10px;
   border-bottom: 1px solid #ddd;
   margin-bottom: 30px;
+}
+
+table td:first-child, table th:first-child {
+  text-align: left;
 }
 
 tbody tr:hover {
