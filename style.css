@@ -20,14 +20,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 3px;
-}
-
-.menu {
-  padding: 10px 0;
 }
 
 .menu .menu-item {
+  display: inline-block;
   padding: 10px 10px 10px 10px;
   text-decoration: none;
   font-weight: normal;
@@ -84,11 +80,9 @@ a {
   font-weight: normal;
 }
 
-.lang-item.current {
-  color: #d9614f;
-}
-.menu-item.current {
-  color: #d9614f;
+.current {
+  color: #ffffff;
+  background-color: #d9614f;
 }
 
 main {
@@ -141,6 +135,18 @@ hr {
 @media all and (max-width: 720px) {
   .bar {
     flex-direction: column-reverse;
+  }
+
+  .lang {
+    padding-bottom: 5px;
+  }
+
+  .lang .current {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .menu .current {
+    border-radius: 5px 5px 0 0;
   }
 
   #pictures {
