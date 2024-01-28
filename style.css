@@ -20,6 +20,16 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: solid #d9614f 3px;
+  box-shadow: 0px 1px 5px #d9614f;
+}
+
+.menu, .lang {
+  padding: 10px;
 }
 
 .menu .menu-item {
@@ -27,10 +37,6 @@ a {
   padding: 10px 10px 10px 10px;
   text-decoration: none;
   font-weight: normal;
-}
-
-.menu .icon {
-  margin-right: 10px;
 }
 
 #pictures {
@@ -83,6 +89,7 @@ a {
 .current {
   color: #ffffff;
   background-color: #d9614f;
+  border-radius: 5px;
 }
 
 main {
@@ -110,18 +117,13 @@ table td:first-child, table th:first-child {
   text-align: left;
 }
 
+table td:last-child, table th:last-child {
+  text-align: right;
+}
+
 tbody tr:hover {
   color: #fff;
   background-color: #d9614f;
-}
-
-hr {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 3px;
-  border: 0;
-  background-color: #d9614f
 }
 
 .icon {
@@ -138,15 +140,7 @@ hr {
   }
 
   .lang {
-    padding-bottom: 5px;
-  }
-
-  .lang .current {
-    border-radius: 0 0 5px 5px;
-  }
-
-  .menu .current {
-    border-radius: 5px 5px 0 0;
+    padding-bottom: 10px;
   }
 
   #pictures {
