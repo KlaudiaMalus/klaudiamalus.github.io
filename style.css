@@ -42,7 +42,12 @@ a {
 
 .picture {
   border-radius: 5px;
-  box-shadow: 3px 3px 10px #555;
+  box-shadow: 3px 3px 5px #555;
+  transition: all 0.25s ease-in-out;
+}
+
+.picture:hover {
+  box-shadow: 3px 3px 15px #555;
 }
 
 .logo {
@@ -70,6 +75,11 @@ a {
 
 .contact a {
   text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.contact a:hover {
+  filter: invert(49%) sepia(31%) saturate(1212%) hue-rotate(319deg) brightness(92%) contrast(84%);
 }
 
 .menu-item, .lang-item {
