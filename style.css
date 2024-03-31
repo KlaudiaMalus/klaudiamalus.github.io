@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   min-width: 400px;
@@ -51,34 +55,30 @@ a {
 }
 
 .logo {
-  font-size: 20px;
-  color: #d9614f;
-  margin-bottom: 40px;
+  height: 3em;
+  padding: 0 10px 0 20px;
+  vertical-align: middle;
 }
 
-.logo-image {
-  display: block;
-  width: 50%;
-  margin: 20px auto;
-}
-
-.contacts {
-  margin: 10% auto;
+#contacts {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  padding: 10px;
 }
 
 .contact {
-  margin: 25px auto;
+  padding: 10px;
   font-size: 20px;
   font-weight: normal;
+  transition: all 0.25s ease-in-out;
 }
 
 .contact a {
   text-decoration: none;
-  transition: all 0.25s ease-in-out;
 }
 
-.contact a:hover {
+.contact:hover, .bar .icon:hover {
   filter: invert(49%) sepia(31%) saturate(1212%) hue-rotate(319deg) brightness(92%) contrast(84%);
 }
 
@@ -87,6 +87,7 @@ a {
   padding: 10px 10px 10px 10px;
   text-decoration: none;
   text-align: center;
+  vertical-align: middle;
   border-radius: 5px;
   border: solid 1px transparent;
   transition: all 0.25s ease-in-out;
@@ -153,20 +154,47 @@ tbody tr:hover {
 }
 
 .icon {
+  filter: invert(17%) sepia(4%) saturate(8%) hue-rotate(16deg) brightness(102%) contrast(93%);
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.bar .icon {
+  width: 1.5em;
+  height: 1.5em;
+  top: .125em;
+  padding-right: 5px;
+  transition: all 0.25s ease-in-out;
+}
+
+footer .icon {
   width: 1em;
   height: 1em;
   top: .125em;
-  position: relative;
-  padding-right: 5px;
+}
+
+hr {
+  padding: 0;
+  max-width: 900px;
+  height: 1px;
+  border: 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0));
 }
 
 @media all and (max-width: 720px) {
   .bar {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
-  .lang {
-    padding-bottom: 10px;
+  .icons {
+    padding: 10px;
+  }
+
+  #contacts {
+    flex-direction: column;
   }
 
   #pictures {
