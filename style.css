@@ -58,6 +58,35 @@ a {
   box-shadow: 3px 3px 15px #555;
 }
 
+#pictures.reviews-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.reviews-gallery a {
+  display: block;
+  border-radius: 5px;
+}
+
+.reviews-gallery a:focus-visible {
+  outline: 3px solid #d9614f;
+  outline-offset: 5px;
+}
+
+.reviews-gallery .picture {
+  display: block;
+  width: 100%;
+  height: min(220px, 30svh);
+  object-fit: contain;
+  margin: 0;
+}
+
+main.reviews-page {
+  min-height: 0;
+}
+
 .logo {
   height: 3em;
   padding: 0 10px 0 20px;
@@ -189,6 +218,19 @@ hr {
 }
 
 @media all and (max-width: 720px) {
+  #pictures.reviews-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .reviews-gallery .picture {
+    height: min(120px, 16svh);
+  }
+
+  main.reviews-page {
+    padding: 15px 20px;
+  }
+
   .bar {
     flex-direction: column;
   }
